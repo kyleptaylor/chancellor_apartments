@@ -4,156 +4,159 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chancellor Apartments</title>
+
+    <!-- Bootstrap CSS -->
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="styles.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </head>
+
   <body>
-    <!-- Header Section -->
-    <header class="bg-light text-center py-4">
-      <h1 class="display-4">Chancellor Apartments</h1>
-      <p class="lead">November 2021</p>
-    </header>
-
-    <!-- Marketing Vision Section -->
-    <section class="container my-5">
-      <div class="row">
-        <div class="col-md-6">
-          <h2>The Brief</h2>
-          <p>
-            <strong>Marketing Vision:</strong> <a href="#">Traditional</a> with
-            an artistic flair and modern tone.
-          </p>
-        </div>
-        <div class="col-md-6">
-          <p>
-            <strong>Unique to your company:</strong>
-            <a href="#">Value and Location</a>
-          </p>
-          <p>
-            Many urban properties are close to professional institutions,
-            restaurants, and bars.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Resident Demographics Section -->
-    <section class="bg-light py-5">
+    <!-- Navigation Bar -->
+    <nav class="navbar sticky-top navbar-expand-lg">
       <div class="container">
-        <h2 class="text-center mb-4">Resident Demographics</h2>
-        <div class="row text-center">
-          <div class="col-md-4">
-            <p>
-              <strong>Who:</strong>
-              <a href="#">Families and Young Professionals</a>
-            </p>
+        <a class="navbar-brand" href="#">
+          <img src="/assets/Logo_Light.webp" alt="Chancellor Apartments" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="nav-links-container mx-auto">
+            <ul class="navbar-nav d-flex justify-content-between">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Overview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Amenities</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Availability</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Neighborhood</a>
+              </li>
+            </ul>
           </div>
-          <div class="col-md-4">
-            <p><strong>Age Group:</strong> 28 - 45</p>
-          </div>
-          <div class="col-md-4">
-            <p><strong>Where:</strong> San Francisco</p>
-          </div>
+          <a href="#" class="btn btn-outline-primary me-4">Tenant Portal</a>
+          <a href="#" class="btn btn-primary">Book a Tour</a>
         </div>
-        <p class="text-center">
-          Residents are active and energetic, enjoying a city lifestyle filled
-          with cultural activities, dining, and shopping.
-        </p>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="container-fluid m-0 p-0">
+      <img
+        class="img-fluid"
+        src="/assets/Hero_Image.webp"
+        alt="Welcome to your new home at Chancellor Apartments"
+      />
+    </section>
+    <section class="hero-section">
+      <div class="container text-center">
+        <h1 class="display-3 display-sm-4 mt-5">Welcome to Your New Home.</h1>
+        <hr class="custom-hr-primary" />
       </div>
     </section>
 
-    <!-- Neighborhood Amenities Section -->
-    <section class="container my-5">
-      <h2 class="text-center mb-4">Neighborhood Amenities</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <p><a href="#">Shopping and Restaurants</a></p>
-          <p>Outdoorsy lifestyle: <a href="#">Biking and Running</a></p>
-        </div>
-        <div class="col-md-6">
-          <p><a href="#">Culture</a></p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Brand Identity Section -->
-    <section class="bg-light py-5">
+    <!-- Features Section -->
+    <section class="features-section py-5">
       <div class="container">
-        <h2 class="text-center mb-4">Brand Identity</h2>
-        <div class="row text-center">
-          <div class="col-md-3 mb-2">Community</div>
-          <div class="col-md-3 mb-2">Family</div>
-          <div class="col-md-3 mb-2">Trustworthy</div>
-          <div class="col-md-3 mb-2">Fun</div>
-          <div class="col-md-3 mb-2">Imaginative</div>
-          <div class="col-md-3 mb-2">Humorous</div>
-          <div class="col-md-3 mb-2">Artistic</div>
-          <div class="col-md-3 mb-2">Charming</div>
-          <div class="col-md-3 mb-2">Clean</div>
-          <div class="col-md-3 mb-2">Energetic</div>
+        <div class="row gx-5">
+          <!-- 32px gutter on desktop, adjusts automatically for mobile -->
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="feature-box">
+              <h3>Modern Amenities</h3>
+              <p>
+                Spacious layouts, stylish interiors, and everything you need to
+                feel at home.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="feature-box">
+              <h3>Prime Location</h3>
+              <p>
+                Just minutes away from restaurants, bars, and professional
+                institutions.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="feature-box">
+              <h3>Outdoor Activities</h3>
+              <p>
+                Explore parks, enjoy biking, artistic venues, and stay active in
+                the city.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Photography Section -->
-    <section class="container my-5">
-      <h2 class="text-center mb-4">Photography</h2>
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <img
-            src="https://via.placeholder.com/350x250"
-            class="img-fluid rounded"
-            alt="Pool Party"
-          />
-        </div>
-        <div class="col-md-4 mb-4">
-          <img
-            src="https://via.placeholder.com/350x250"
-            class="img-fluid rounded"
-            alt="Dining Out"
-          />
-        </div>
-        <div class="col-md-4 mb-4">
-          <img
-            src="https://via.placeholder.com/350x250"
-            class="img-fluid rounded"
-            alt="Apartment Interior"
-          />
-        </div>
-        <div class="col-md-4 mb-4">
-          <img
-            src="https://via.placeholder.com/350x250"
-            class="img-fluid rounded"
-            alt="Work Meeting"
-          />
-        </div>
-        <div class="col-md-4 mb-4">
-          <img
-            src="https://via.placeholder.com/350x250"
-            class="img-fluid rounded"
-            alt="Outdoor Activities"
-          />
-        </div>
-        <div class="col-md-4 mb-4">
-          <img
-            src="https://via.placeholder.com/350x250"
-            class="img-fluid rounded"
-            alt="BBQ"
-          />
+    <!-- Apartments Section -->
+    <section class="apartments-section py-5">
+      <div class="container">
+        <h2 class="text-center">Available Floorplans</h2>
+        <div class="row gx-5 gy-4">
+          <!-- Adds 32px horizontal and 16px vertical gutters -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="floorplan-box">
+              <img src="studio-a.jpg" alt="Studio A" class="img-fluid" />
+              <h5>Studio 0A - The George</h5>
+              <p>$2,255 - $2,490</p>
+              <a href="#" class="btn btn-primary">See Availability</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="floorplan-box">
+              <img src="studio-b.jpg" alt="Studio B" class="img-fluid" />
+              <h5>Studio 0B - The Kent</h5>
+              <p>$2,550 - $2,675</p>
+              <a href="#" class="btn btn-primary">See Availability</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="floorplan-box">
+              <img src="studio-c.jpg" alt="Studio C" class="img-fluid" />
+              <h5>Studio 0C - The Caroline</h5>
+              <p>$2,630 - $2,725</p>
+              <a href="#" class="btn btn-primary">See Availability</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-      <p>&copy; 2024 Chancellor Apartments. All Rights Reserved.</p>
+    <footer class="footer text-light py-4">
+      <div class="container text-center">
+        <p>&copy; 2024 Chancellor Apartments | All Rights Reserved</p>
+      </div>
     </footer>
-    <script src="scripts.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

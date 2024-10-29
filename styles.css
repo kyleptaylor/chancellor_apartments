@@ -1,34 +1,98 @@
-body {
-  font-family: "Arial", sans-serif;
-  line-height: 1.6;
+:root {
+  /* Override Bootstrap primary theme colors */
+  --bs-primary: #4b5d67; /* Indigo Blue */
+  --bs-secondary: #333533; /* Charcoal Gray */
+  --bs-success: #81b29a; /* Sage Green */
+  --bs-danger: #e07a5f; /* Terracotta */
+  --bs-warning: #f2cc8f; /* Mustard Yellow */
+  --bs-info: #f6f3e0; /* Soft Beige */
+  --bs-light: #f9f9f9; /* Light variant */
+  --bs-dark: #2b2b2b; /* Dark variant */
 }
 
-header {
-  background: #f8f9fa;
+/* Basic Styles */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--bs-info);
+  color: var(--bs-secondary);
+}
+
+.navbar {
+  background-color: var(--bs-primary);
+}
+
+.nav-link {
+  font-family: "Poppins", sans-serif;
+  color: var(--bs-danger);
+}
+
+.nav-link:hover {
+  color: var(--bs-warning);
+}
+
+.navbar-brand img {
+  width: 150px;
 }
 
 h1,
-h2 {
-  font-weight: bold;
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Cormorant Garamond", serif;
+  color: var(--bs-primary);
 }
 
-footer {
-  background: #343a40;
+.btn-outline-primary {
+  font-family: "Poppins", sans-serif;
+  color: var(--bs-danger);
+  border-color: var(--bs-danger);
 }
 
-a {
-  text-decoration: none;
-  color: #007bff;
+.btn-outline-primary:hover,
+.btn-primary:hover {
+  background-color: var(--bs-warning);
+  border-color: var(--bs-warning);
+  color: var(--bs-primary);
 }
 
-a:hover {
-  text-decoration: underline;
+.btn-primary {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bs-danger);
+  border-color: var(--bs-danger);
+  color: var(--bs-primary);
 }
 
-.img-fluid {
-  transition: transform 0.2s;
+hr.custom-hr-primary {
+  border: var(--bs-primary) 2px solid;
+  border-radius: 5px;
+  opacity: 1;
 }
 
-.img-fluid:hover {
-  transform: scale(1.05);
+.row.gx-5 {
+  --bs-gutter-x: 32px; /* Desktop gutter spacing */
+}
+
+@media (max-width: 768px) {
+  .row.gx-5 {
+    --bs-gutter-x: 16px; /* Mobile gutter spacing */
+  }
+}
+
+.feature-box {
+  border: var(--bs-primary) 3px solid;
+  background-color: var(--bs-light);
+  border-radius: 5px;
+  padding: 1em;
+  margin: 1em 0;
+  text-align: center;
+}
+
+.feature-box p {
+  margin: 0;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--bs-primary);
 }
