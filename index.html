@@ -5,18 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chancellor Apartments</title>
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
 
     <!-- Custom Stylesheet -->
@@ -65,27 +71,30 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="container-fluid m-0 p-0">
-      <img
-        class="img-fluid"
-        src="/assets/Hero_Image.webp"
-        alt="Welcome to your new home at Chancellor Apartments"
-      />
-    </section>
     <section class="hero-section">
+      <div
+        class="hero-img-container container-fluid d-flex justify-content-center align-items-center m-0 p-0"
+      >
+        <img
+          class="img-fluid"
+          src="/assets/Hero_Image.webp"
+          alt="Welcome to your new home at Chancellor Apartments"
+        />
+      </div>
       <div class="container text-center">
-        <h1 class="display-3 display-sm-4 mt-5">Welcome to Your New Home.</h1>
+        <h1 class="display-3 display-sm-4 mt-5">
+          Welcome to Your&nbsp;New&nbsp;Home.
+        </h1>
         <hr class="custom-hr-primary" />
       </div>
     </section>
 
     <!-- Features Section -->
-    <section class="features-section py-5">
+    <section class="features-section mb-lg-4">
       <div class="container">
-        <div class="row gx-5">
-          <!-- 32px gutter on desktop, adjusts automatically for mobile -->
+        <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-12">
-            <div class="feature-box">
+            <div class="feature-box p-4">
               <h3>Modern Amenities</h3>
               <p>
                 Spacious layouts, stylish interiors, and everything you need to
@@ -94,7 +103,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-12">
-            <div class="feature-box">
+            <div class="feature-box p-4">
               <h3>Prime Location</h3>
               <p>
                 Just minutes away from restaurants, bars, and professional
@@ -103,7 +112,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-12">
-            <div class="feature-box">
+            <div class="feature-box p-4">
               <h3>Outdoor Activities</h3>
               <p>
                 Explore parks, enjoy biking, artistic venues, and stay active in
@@ -115,44 +124,360 @@
       </div>
     </section>
 
-    <!-- Apartments Section -->
-    <section class="apartments-section py-5">
-      <div class="container">
-        <h2 class="text-center">Available Floorplans</h2>
-        <div class="row gx-5 gy-4">
-          <!-- Adds 32px horizontal and 16px vertical gutters -->
-          <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="floorplan-box">
-              <img src="studio-a.jpg" alt="Studio A" class="img-fluid" />
-              <h5>Studio 0A - The George</h5>
-              <p>$2,255 - $2,490</p>
-              <a href="#" class="btn btn-primary">See Availability</a>
+    <!-- Area Info Section -->
+    <section class="area-section py-5">
+      <div class="container my-4">
+        <div class="row">
+          <div class="col-sm-12 col-lg-6">
+            <div
+              class="info-img-container d-flex justify-content-center align-items-center m-0 p-0"
+            >
+              <img
+                src="/assets/Front_Row_Residence.webp"
+                alt="Front Row Residence"
+                class="img-fluid rounded"
+              />
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="floorplan-box">
-              <img src="studio-b.jpg" alt="Studio B" class="img-fluid" />
-              <h5>Studio 0B - The Kent</h5>
-              <p>$2,550 - $2,675</p>
-              <a href="#" class="btn btn-primary">See Availability</a>
+          <div class="col-sm-12 col-lg-6">
+            <div class="my-4 mx-0 mx-lg-4">
+              <h2>Front Row Residence</h2>
+              <hr class="custom-hr-secondary d-md-none d-block" />
+              <p>
+                Our apartments are the perfect fit for young professionals and
+                families seeking a vibrant lifestyle. With spacious layouts and
+                modern amenities, you’ll find everything you need to feel right
+                at home.
+              </p>
+              <p>
+                The welcoming community atmosphere makes it easy to connect with
+                neighbors, while the convenient location ensures you're just
+                minutes away from work, schools, and everyday necessities.
+              </p>
+              <a href="#" class="btn-link">Explore More</a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="floorplan-box">
-              <img src="studio-c.jpg" alt="Studio C" class="img-fluid" />
-              <h5>Studio 0C - The Caroline</h5>
-              <p>$2,630 - $2,725</p>
-              <a href="#" class="btn btn-primary">See Availability</a>
+        </div>
+      </div>
+      <div class="container my-4">
+        <div class="row">
+          <div class="col-sm-12 col-lg-6 order-1 order-lg-2">
+            <div
+              class="info-img-container d-flex justify-content-center align-items-center m-0 p-0"
+            >
+              <img
+                src="/assets/Adventure_Image.webp"
+                alt="Front Row Residence"
+                class="img-fluid rounded"
+              />
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-6 order-2 order-lg-1">
+            <div class="my-4 mx-0 mx-lg-4">
+              <h2>Adventure at Your Door</h2>
+              <hr class="custom-hr-secondary d-md-none d-block" />
+              <p>
+                Step outside and immerse yourself in the excitement of city
+                living! Enjoy an array of fantastic restaurants, trendy bars,
+                and cultural attractions just a stone's throw away. Explore
+                local parks for outdoor activities, visit nearby art galleries,
+                or catch a live performance in one of San Francisco's many
+                venues.
+              </p>
+              <p>
+                With public transportation options easily accessible, the heart
+                of the city is always within reach, making it easy to experience
+                all that San Francisco has to offer!
+              </p>
+              <a href="#" class="btn-link">Explore More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container my-4">
+        <div class="row">
+          <div class="col-sm-12 col-lg-6">
+            <div
+              class="info-img-container d-flex justify-content-center align-items-center m-0 p-0"
+            >
+              <img
+                src="/assets/Community_Image.webp"
+                alt="Front Row Residence"
+                class="img-fluid rounded"
+              />
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-6">
+            <div class="my-4 mx-0 mx-lg-4">
+              <h2>Community Centered Living</h2>
+              <hr class="custom-hr-secondary d-md-none d-block" />
+              <p>
+                At our apartments, we believe in fostering a sense of community
+                that goes beyond mere residency. Our vibrant neighborhood is
+                designed to inspire connection and engagement, offering a
+                variety of amenities that encourage social interaction and
+                shared experiences.
+              </p>
+              <p>
+                Join community events, meet your neighbors at the local coffee
+                shop, or participate in outdoor fitness classes in nearby parks.
+                Here, you’re not just finding a place to live; you’re becoming
+                part of a supportive community that celebrates the best of city
+                living!
+              </p>
+              <a href="#" class="btn-link">Explore More</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Available Floorplans Section -->
+    <section class="apartments-section py-5 mb-5">
+      <div class="container">
+        <h2 class="text-md-center text-start mb-4">Available Floorplans</h2>
+        <div
+          id="floorplansCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="cards-wrapper">
+                <div class="card">
+                  <img
+                    src="/assets/Studio_Image.png"
+                    class="card-img-top"
+                    alt="Studio OA Floorplan"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">
+                      Studio OA<span> - The George</span>
+                    </h4>
+                    <div
+                      class="d-flex flex-wrap justify-content-between align-items-center pt-2"
+                    >
+                      <p class="">$2,355 – $2,490</p>
+                      <a href="#" class="btn btn-primary">View Layout</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card d-none d-lg-block">
+                  <img
+                    src="/assets/Studio_Image.png"
+                    class="card-img-top"
+                    alt="Studio OB Floorplan"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">
+                      Studio OB<span> - The Kent</span>
+                    </h4>
+                    <div
+                      class="d-flex flex-wrap justify-content-between align-items-center pt-2"
+                    >
+                      <p class="">$2,400 – $2,600</p>
+                      <a href="#" class="btn btn-primary">View Layout</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card d-none d-lg-block">
+                  <img
+                    src="/assets/Studio_Image.png"
+                    class="card-img-top"
+                    alt="Studio OC Floorplan"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">
+                      Studio OC<span> - The Caroline</span>
+                    </h4>
+                    <div
+                      class="d-flex flex-wrap justify-content-between align-items-center pt-2"
+                    >
+                      <p class="">$2,500 – $2,750</p>
+                      <a href="#" class="btn btn-primary">View Layout</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="cards-wrapper">
+                <div class="card">
+                  <img
+                    src="/assets/1_Bed_Image.png"
+                    class="card-img-top"
+                    alt="1 Bed OA Floorplan"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">
+                      1 Bed OA<span> - The George</span>
+                    </h4>
+                    <div
+                      class="d-flex flex-wrap justify-content-between align-items-center pt-2"
+                    >
+                      <p class="">$2,600 – $2,850</p>
+                      <a href="#" class="btn btn-primary">View Layout</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card d-none d-lg-block">
+                  <img
+                    src="/assets/1_Bed_Image.png"
+                    class="card-img-top"
+                    alt="1 Bed OB Floorplan"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">1 Bed OB<span> - The Kent</span></h4>
+                    <div
+                      class="d-flex flex-wrap justify-content-between align-items-center pt-2"
+                    >
+                      <p class="">$2,700 – $2,950</p>
+                      <a href="#" class="btn btn-primary">View Layout</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card d-none d-lg-block">
+                  <img
+                    src="/assets/1_Bed_Image.png"
+                    class="card-img-top"
+                    alt="1 Bed OC Floorplan"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">
+                      1 Bed OC<span> - The Caroline</span>
+                    </h4>
+                    <div
+                      class="d-flex flex-wrap justify-content-between align-items-center pt-2"
+                    >
+                      <p class="">$2,800 – $3,000</p>
+                      <a href="#" class="btn btn-primary">View Layout</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="cards-wrapper">
+                <div class="card">
+                  <img
+                    src="/assets/2_Bed_Image.png"
+                    class="card-img-top"
+                    alt="2 Bed OA Floorplan"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">
+                      2 Bed OA<span> - The George</span>
+                    </h4>
+                    <div
+                      class="d-flex flex-wrap justify-content-between align-items-center pt-2"
+                    >
+                      <p class="">$3,100 – $3,350</p>
+                      <a href="#" class="btn btn-primary">View Layout</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card d-none d-lg-block">
+                  <img
+                    src="/assets/2_Bed_Image.png"
+                    class="card-img-top"
+                    alt="2 Bed OB Floorplan"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">2 Bed OB<span> - The Kent</span></h4>
+                    <div
+                      class="d-flex flex-wrap justify-content-between align-items-center pt-2"
+                    >
+                      <p class="">$3,200 – $3,450</p>
+                      <a href="#" class="btn btn-primary">View Layout</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card d-none d-lg-block">
+                  <img
+                    src="/assets/2_Bed_Image.png"
+                    class="card-img-top"
+                    alt="2 Bed OC Floorplan"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">
+                      2 Bed OC<span> - The Caroline</span>
+                    </h4>
+                    <div
+                      class="d-flex flex-wrap justify-content-between align-items-center pt-2"
+                    >
+                      <p class="">$3,300 – $3,600</p>
+                      <a href="#" class="btn btn-primary">View Layout</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#floorplansCarousel"
+            role="button"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#floorplansCarousel"
+            role="button"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <!-- Footer -->
-    <footer class="footer text-light py-4">
-      <div class="container text-center">
-        <p>&copy; 2024 Chancellor Apartments | All Rights Reserved</p>
+    <footer class="footer">
+      <div
+        class="container d-flex flex-wrap justify-content-center justify-content-md-between py-5"
+      >
+        <a class="col-10 col-md-4 text-center text-md-start" href="#">
+          <img
+            src="/assets/Logo_Light.webp"
+            alt="Chancellor Apartments"
+            class="img-fluid"
+          />
+        </a>
+
+        <ul
+          class="nav col-12 col-md-8 justify-content-center justify-content-md-end py-4"
+        >
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Directions</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Careers</a>
+          </li>
+        </ul>
+
+        <!-- Social Media Icons -->
+        <div class="social-icons col-12 text-center text-md-start pt-2">
+          <a href="#!" role="button" class="btn">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="#!" role="button" class="btn">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="#!" role="button" class="btn">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a href="#!" role="button" class="btn">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
       </div>
     </footer>
 
